@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Link</title>
+    <link th:href="@{/css/demo.css}" rel="stylesheet"/>
+</head>
+<body>
+
+  <div align="center">
+      <h1>Link Expression</h1>
+    <hr>
+  </div>
+
+  <div>
+    <a th:href="@{/helloWorld}"> HelloWorld </a>
+    <br>
+    <a th:href="@{/variable}"> Variable Expression </a>
+    <br>
+    <a th:href="@{/selection}"> Selection Expression </a>
+    <br>
+    <a th:href="@{/message}"> Message Expression </a>
+    <br>
+    <a th:href="@{/link/{id}(id=${id})}"> Link With Parameter </a>
+  </div>
+
+</body>
+</html>

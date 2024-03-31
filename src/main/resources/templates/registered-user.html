@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Registered User</title>
+</head>
+<body>
+
+  <div align="center">
+    <h1>Registered User Info</h1>
+    <hr>
+    <br>
+  </div>
+
+  <div align="center">
+    <p>User Name: <strong th:text="${getUser.userName}"></strong> </p>
+    <p>User Email: <strong th:text="${getUser.userEmail}"></strong> </p>
+    <p>User Password: <strong th:text="${getUser.userPassword}"></strong> </p>
+    <p>User Gender: <strong th:text="${getUser.userGender}"></strong> </p>
+    <p>User Address: <strong th:text="${getUser.userAddress}"></strong> </p>
+    <p>User isMarried: <strong th:text="${getUser.isMarried}"></strong> </p>
+    <p>User Profession: <strong th:text="${getUser.userProfession}"></strong> </p>
+  </div>
+
+</body>
+</html>
